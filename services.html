@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Build a responsive web layout using css grid techniques">
+  <title>Our Services - My Responsive Website</title>
+  <meta name="author" content="Oluwayemi Oni">
+  <link rel="stylesheet" href="styles/services.css">
+  <script src="scripts/services.js" defer ></script>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="services-intro">
+      <h2>What We Offer</h2>
+      <p>We deliver high-quality digital solutions tailored to your needs. Browse our services below.</p>
+    </section>
+    <section class="services-grid">
+      <article class="service-card" onclick="highlightService(this)">
+        <h3>Web Design</h3>
+        <p>Responsive and accessible interfaces crafted for your brand.</p>
+        <br>
+        <a href="https://coalitiontechnologies.com/web-design" target="_blank">
+          <img src="images/design.webp" alt="web design">
+        </a>
+      </article>
+      <article class="service-card" onclick="highlightService(this)">
+        <h3>Web Development</h3>
+        <p>Custom-built websites using modern technologies and frameworks.</p>
+        <br>
+        <a href="https://ozitechgroup.com" target="_blank">
+          <img src="images/web.jpg" alt="web Development">
+        </a>
+      </article>
+      <article class="service-card" onclick="highlightService(this)">
+        <h3>SEO Optimization</h3>
+        <p>Improve your visibility with search engine-friendly strategies.</p>
+        <br>
+        <a href="https://www.godaddy.com/" target="_blank">
+          <img src="images/seo.jpg" alt="SEO Optimization">
+        </a>
+      </article>
+      <article class="service-card" onclick="highlightService(this)">
+        <h3>Maintenance</h3>
+        <p>Ongoing support and updates to keep your site running smoothly.</p>
+        <br>
+        <a href="https://www.platgroupng.com/" target="_blank">
+          <img src="images/maintenance.jpg" alt="Maintenance">
+        </a>
+      </article>
+    </section>
+  </main>
+   <footer class = "footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h4>About</h4>
+        <p>
+          Welcome to our responsive website. We're a passionate team of designers, developers, and consultants dedicated to building modern, user-friendly web experiences. Our mission is to help people and businesses create a strong digital presence.
+        </p>
+        <img src="images/ybuk-logo.webp" alt="Ybuk Solutions" class="footer-logo">
+      </div>
+      <div class="footer-section contact">
+        <h4>Contacts</h4>
+        <p>Olufemi Avenue, Off International Brewery<br>Ilesa, Nigeria<br>
+          <a href="mailto:info@seedmoney.org">info@Ybuksolutions.org</a><br>
+          (+234) 806-362-7458
+        </p>
+        <div class="social-icons">
+          <a href= "https://facebook.com">
+            <img src="images/facebook.webp" alt="Facebook">
+          </a>
+          <a href="https://twitter.com">
+            <img src="images/twitter.webp" alt="Twitter">
+          </a>
+          <a href="https://instagram.com">
+            <img src="images/instagram.webp" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="footer-section resources">
+        <h4>Helpful Resources</h4>
+        <ul>
+          <li><a href="about.html">What to know about us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-section subscribe">
+        <h4>Join Our List</h4>
+        <form id="subscribeForm">
+          <input type="text" placeholder="First Name" id="firstName" required>
+          <input type="email" placeholder="Email" id="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <button id="toTopBtn" title="Go to top">↑</button>
+    <p>&copy; 2025 My Responsive Site</p> 🌸 Oluwayemi Oni 🌸 Nigeria</p>
+  </footer>
+</body>
+</html>
