@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Build a responsive web layout using css grid techniques">
+  <title>Our Services - My Responsive Website</title>
+  <meta name="author" content="Oluwayemi Oni">
+  <title>Responsive CSS Grid Layout</title>
+  <link rel="stylesheet" href="styles/desktop.css">
+  <link rel="stylesheet" href="styles/tablet.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <script src="scripts/grid.js" defer ></script>
+</head>
+<body>
+  <header>
+    <h1>My Responsive Website</h1>
+    <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to My Site</h2>
+      <p>Discover modern layouts built with CSS Grid</p>
+      <a href="contact.html" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <main>
+    <article>
+      <h2>Main Article</h2>
+      <p>This is the main content area that adapts across devices using CSS Grid.</p>
+    </article>
+    <aside>
+      <h3>Sidebar</h3>
+      <p>Additional sidebar content goes here.</p>
+    </aside>
+  </main>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="images/governors-lodge1.webp" alt="Governor Office">
+        <figcaption>Governor's Office, Osogbo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/oau-campus1.png" alt="OAU Campus">
+        <figcaption>OAU Campus, Ile-Ife</figcaption>
+      </figure>
+      <figure>
+        <img src="images/Osun.jpg" alt="Osun State">
+        <figcaption>Osun Central Overview, Osogbo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/grove2.webp" alt="Tourism Center">
+        <figcaption>Tourism Area, Ofatedo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="cards">
+    <h2>Our Services</h2>
+    <div class="card-grid">
+
+        <a href="services.html" class="card">
+            <h3>Design</h3>
+            <p>Creative design solutions.</p>
+        </a>
+        <a href="services.html" class="card">
+            <h3>Development</h3>
+            <p>Modern websites & apps.</p>
+        </a>
+        <a href="services.html" class="card">
+            <h3>Maintenance</h3>
+            <p>Strategic digital Maintenance.</p>
+        </a>
+    </div>
+  </section>
+
+ <footer class = "footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h4>About</h4>
+        <p>
+          Welcome to our responsive website. We're a passionate team of designers, developers, and consultants dedicated to building modern, user-friendly web experiences. Our mission is to help people and businesses create a strong digital presence.
+        </p>
+        <img src="images/ybuk-logo.webp" alt="Ybuk Solutions" class="footer-logo">
+      </div>
+      <div class="footer-section contact">
+        <h4>Contacts</h4>
+        <p>Olufemi Avenue, Off International Brewery<br>Ilesa, Nigeria<br>
+          <a href="mailto:info@seedmoney.org">info@Ybuksolutions.org</a><br>
+          (+234) 806-362-7458
+        </p>
+        <div class="social-icons">
+          <a href= "https://facebook.com">
+            <img src="images/facebook.webp" alt="Facebook">
+          </a>
+          <a href="https://twitter.com">
+            <img src="images/twitter.webp" alt="Twitter">
+          </a>
+          <a href="https://instagram.com">
+            <img src="images/instagram.webp" alt="Instagram">
+          </a>
+        </div>
+      </div>
+  
+      <div class="footer-section resources">
+        <h4>Helpful Resources</h4>
+        <ul>
+          <li><a href="about.html">What to know about us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section subscribe">
+        <h4>Join Our List</h4>
+        <form id="subscribeForm">
+          <input type="text" placeholder="First Name" id="firstName" required>
+          <input type="email" placeholder="Email" id="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <button id="toTopBtn" title="Go to top">↑</button>
+    <p>&copy; 2025 My Responsive Site</p> 🌸 Oluwayemi Oni 🌸 Nigeria</p>
+  </footer>
+</body>
+</html>
