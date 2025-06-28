@@ -157,38 +157,96 @@ main {
   .social-icons a:hover {
     color: #0077cc;
   }
+
+  .footer-section.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns content to the left */
+  gap: 0.5rem; 
+  padding: 1rem;
+}
+
+.footer-section.resources h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #ece9e9;
+}
+
+.footer-section.resources ul {
+  list-style-type: disc; 
+  padding-left: 1.5rem;  /* Indent the bullets */
+  margin: 0;
+}
+
+.footer-section.resources li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section.resources a:hover {
+  color: #223847;
+}
   
-  .footer-section.subscribe form {
-    display: flex;
-    flex-direction: column;
-  }
+.footer-section.subscribe form {
+  display: flex;
+  flex-direction: column;
+}
   
-  .footer-section.subscribe input {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-  }
+.footer-section.subscribe input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
   
-  .footer-section.subscribe button {
-    background-color: #04090c;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+.footer-section.subscribe button {
+  background-color: #04090c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-section.subscribe button:hover{
+  color: #223847;
+}
   
-  .footer-copy {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-  }
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
 
 /* Responsive Adjustments */
-@media (max-width: 600px) {
+/* Tablet View */
+@media (min-width: 600px) and (max-width: 1024px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1025px) {
+  main {
+    grid-template-areas:
+      "intro intro"
+      "team team";
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile View */
+@media (max-width: 599px) {
   nav ul {
     flex-direction: column;
+    gap: 0.5rem;
   }
 
   .intro, .team-member {
