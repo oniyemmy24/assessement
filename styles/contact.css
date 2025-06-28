@@ -53,11 +53,15 @@ nav a {
   font-weight: bold;
 }
 
+nav a.active {
+  text-decoration: none;
+}
 nav ul li a:hover {
     background: gold;
     color: black;
     border-radius: 5px;
   }
+  
 /* Main */
 main {
   grid-area: main;
